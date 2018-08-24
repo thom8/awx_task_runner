@@ -2,7 +2,7 @@ FROM ansible/awx_task:latest
 
 USER root
 
-RUN yum install -y php72u-cli php72u-json php72u-pdo php72u-dom \
+RUN yum install -y php72u-cli php72u-json php72u-pdo php72u-dom which \
     && yum -y clean all \
     && rm -rf /root/.cache
 
