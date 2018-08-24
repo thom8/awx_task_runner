@@ -8,6 +8,6 @@ RUN yum install -y php72u-cli php72u-json php72u-pdo php72u-dom \
 
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
-    && composer global require drush/drush:6.4.0
+    && composer global require drush/drush:8.1.16
 
 USER 1000
